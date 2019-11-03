@@ -1,0 +1,46 @@
+{
+  "name": "@jalasem/police",
+  "version": "0.1.0",
+  "description": "Versatile schema & data validator for Javascript ",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "prepublish": "npm run build",
+    "dev": "nodemon --exec yarn build && node ./dist/ --ignore=./dist",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jalasem/police.git"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "Schema",
+    "Validation",
+    "API",
+    "data",
+    "validation"
+  ],
+  "author": "Abdulsamii Ajala <kgasta@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jalasem/police/issues"
+  },
+  "homepage": "https://github.com/jalasem/police#readme",
+  "dependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "D": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.6.3",
+    "eslint": "^6.6.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^24.9.0"
+  }
+}
